@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <header>
+                <h1>Beranda</h1>
+            </header>
+            <div class="register-form">
+                <h2>Daftar</h2>
+                <p>Mohon masukkan informasi pendaftaran dengan valid</p>
+                <form id="registrationForm" onsubmit="showPopup(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nama lengkap" required>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Alamat email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Konfirmasi Password" required>
+                    </div>
+                    <button type="submit" class="btn">Daftar</button>
+                    <div class="login-link">
+                        <hr>
+                        <span>Sudah punya akun?</span>
+                        <hr>
+                    </div>
+                    <a href="/landingpage/" class="login-now">Masuk sekarang</a>
+                </form>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="banner.jpg" alt="Image">
+        </div>
+
+        <div class="popup" id="popupBox">
+            <div class="popup-content">
+                <span class="popup-close" id="popupClose">&times;</span>
+                <p>Terima kasih telah mendaftar! Silakan cek email Anda untuk konfirmasi.</p>
+            </div>
+        </div>
+          
+    </div>
+    <script src="registrasi.js"></script>
+</body>
+</html>

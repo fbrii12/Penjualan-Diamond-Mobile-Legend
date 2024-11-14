@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <header>
+                <h1>Beranda</h1>
+            </header>
+            <div class="login-form">
+                <h2>Masuk</h2>
+                <p>Masuk Menggunakan Akun Terdaftar Kamu.</p>
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Username" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Kata sandi" required />
+                        <span class="password-toggle" onclick="togglePassword()">👁️</span>
+                    </div>
+                    <div class="form-options">
+                        <label> <input type="checkbox" /> Ingatkan saya </label>
+                        <a href="#" class="forgot-password">Lupa Password</a>
+                    </div>
+
+                    <div class="login-link">
+                        <hr />
+                        <span>Belum memiliki akun?</span>
+                        <hr />
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <a href="/register/index.html" class="signup-now">Daftar</a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="banner.jpg" alt="Login Image" />
+        </div>
+    </div>
+
+    <div class="popup" id="popupBox">
+        <div class="popup-content">
+            <span class="popup-close" id="popupClose">&times;</span>
+            <p>Login berhasil! Selamat datang kembali.</p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

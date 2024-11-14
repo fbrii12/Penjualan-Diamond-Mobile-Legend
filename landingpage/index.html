@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/Home/index.html" class="logo-button">Beranda</a>
+            <ul>
+                <li><a href="#" id="cekPesanan">Cek Pesanan</a></li>
+                <li><a href="#">Daftar Harga</a></li>
+                <li><button id="updateContentBtn">Update Konten</button></li><br>
+            </ul>
+            <div class="user-options">
+                <select id="language-select">
+                    <option>ID</option>
+                    <option>EN</option>
+                </select>
+                <a href="/Login/index.html" class="signup-now">Login</a>
+                <a href="/Register/index.html" class="signup-now">Daftar</a>
+            </div>
+        </nav>        
+    </header>
+    
+    <section class="search-section">
+        <div class="category">
+            <div class="category-item">Games</div>
+            <div class="category-item">Voucher</div>
+            <div class="category-item">Pulsa</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Mau Top Up Game Apa?">
+            <button type="submit" id="search-button">🔍</button>
+        </div>
+    </section>
+
+    <section class="best-sellers">
+        <h2>Best Sellers</h2><br>
+        <p id="main-content"></p><br>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="mobile legend.jpg" alt="Mobile Legends">
+            </div>
+            <div class="game-card">
+                <img src="free fire.webp" alt="Free Fire">
+            </div>
+            <div class="game-card">
+                <img src="hok.webp" alt="Honor Of Kings">
+            </div>
+            <div class="game-card">
+                <img src="pbug.png" alt="Pbug">
+            </div>
+            <div class="game-card">
+                <img src="valorant.webp" alt="Valorant">
+            </div>
+            <div class="game-card">
+                <img src="5x5.jpg" alt="5x5">
+            </div>
+            <div class="game-card">
+                <img src="Supersus.jpg" alt="Supersus">
+            </div>
+            <div class="game-card">
+                <img src="COD.png" alt="Call Of Dutty">
+            </div>
+            <div class="game-card">
+                <img src="Lol.jpeg" alt="League Of Legend">
+            </div>
+            <div class="game-card">
+                <img src="Roblox.png" alt="Roblox">
+            </div>
+        </div>
+    </section>
+    <div id="snackbar">This is a snackbar notification!</div>
+    <script src="Script.js"></script> 
+</body>
+</html>
